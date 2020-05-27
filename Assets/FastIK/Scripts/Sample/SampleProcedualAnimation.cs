@@ -17,10 +17,7 @@ namespace DitzelGames.FastIK
             Step.Translate(Vector3.forward * Time.deltaTime * 0.7f);
             if (Step.position.z > 1f)
                 Step.position = Step.position + Vector3.forward * -2f;
-            Attraction.Translate(Vector3.forward * Time.deltaTime * 0.5f);
-            if (Attraction.position.z > 1f)
-                Attraction.position = Attraction.position + Vector3.forward * -2f;
-
+           
             //footsteps
             for(int i = 0; i < FootTarget.Length; i++)
             {
